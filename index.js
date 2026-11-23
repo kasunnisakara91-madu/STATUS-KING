@@ -7,6 +7,8 @@ import { loadPlugins } from './lib/plugins.js';
 import { pairNumber, startBot } from './lib/bot.js';
 import { listSessions } from './lib/session.js';
 
+process.on('unhandledRejection', (e) => console.error('[unhandledRejection]', e));
+process.on('uncaughtException', (e) => console.error('[uncaughtException]', e));
 const dir = path.dirname(fileURLToPath(import.meta.url));
 const app = express();
 app.use(express.static(path.join(dir, 'public')));
