@@ -1,0 +1,14 @@
+{
+  "name": "status-king",
+  "version": "1.0.0",
+  "type": "module",
+  "main": "index.js",
+  "scripts": { "start": "node index.js" },
+  "engines": { "node": ">=20" },
+  "dependencies": {
+    "@itsliaaa/baileys": "latest",
+    "express": "^4.19.2",
+    "mongoose": "^8.5.0",
+    "pino": "^9.3.2"
+  }
+}
